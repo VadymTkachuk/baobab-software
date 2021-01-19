@@ -7,6 +7,7 @@ To deploy you need:
 ```
 git clone https://github.com/VadymTkachuk/baobab-software.git
 ```
+Change directory to the dir.
 ```
 python -m venv .
 ```
