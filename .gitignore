@@ -1,3 +1,9 @@
+/Scripts
+/Lib
+/baobab-software/site/
+pyvenv.cfg
+.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

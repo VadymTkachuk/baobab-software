@@ -1,0 +1,106 @@
+site_name: My Docs
+site_name: Baobab Software
+site_description: Baobab Software official site.
+site_author: Vadym Tkachuk
+copyright: Copyright &copy; Baobab Software &trade;
+# google_analytics: ['UA-27795084-5', 'mkdocs.org']
+
+nav:
+    - Home: index.md
+    - Projects: projects.md
+    - Technology: technology.md
+    - Contacts: contacts.md
+
+theme:
+    # Teme names.
+    name: material
+    # Directory with the files to override original.
+    # Saves space.
+    custom_dir: overrides
+    language: 'en'
+
+    palette:
+        # Insiders realises only. Doesn't work for now.
+        # Toggle light mode
+        - scheme: default
+          primary: blue
+          accent: blue
+          toggle:
+            icon: material/toggle-switch
+            name: Switch to light mode
+        # Toggle dark mode
+        - scheme: slate
+          primary: blue
+          accent: blue
+          toggle:
+            icon: material/toggle-switch-off-outline
+            name: Switch to dark mode
+    
+    font: 
+        text: Roboto
+        code: Roboto Mono
+    
+    favicon:
+    #   images/favicon
+        material/tree
+    icon:
+    #   logo: material/tree    
+        logo: nightingale     
+    features:
+        - navigation.instant
+        # - navigation.tabs
+        - search.suggest
+        - search.highlight
+        - search.share
+
+    # Programming languages highlihting.        
+    highlightjs: true
+    hljs_languages:
+        - yaml
+    static_templates:
+        - 404.html
+    include_search_page: false
+    search_index_only: false
+
+plugins:
+    - search
+
+extra:
+    search:
+        language: 'en'
+        separator: '[\s\-\.]+'
+        prebuilt_index: false
+
+    social: 
+        - icon: fontawesome/brands/twitter
+          link: https://twitter.com/squidfunk
+          name: squidfunk on Twitter
+        # disqus: 'your-shortname'
+    
+    # Disables "Made with Material for MkDocs" notice.
+    generator: false
+    
+    # Insiders realises only. Doesn't work for now.
+    # alternate:
+    #     # Switch to English
+    #     - name: English
+    #       link: <your-site>/en/
+    #       lang: en
+
+    #     # Switch to German
+    #     - name: Deutsch
+    #       link: <your-site>/de/
+    #       lang: de
+
+    #     # Switch to Japanese
+    #     - name: 日本語
+    #       link: <your-site>/ja/
+    #       lang: ja    
+
+extra_css:
+    - stylesheets/extra.css  
+
+extra_javascript:
+    - javascripts/extra.js
+
+  
